@@ -110,40 +110,20 @@ class _StartingPageState extends State<StartingPage> {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: GestureDetector(
-                      onTap: () {},
-                      child: true
-                          ? Container(
-                              margin:
-                                  const EdgeInsets.only(left: defaultMargin),
-                              width: 32,
-                              height: 32,
-                              decoration: const BoxDecoration(
-                                // image
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                      "https://user-images.githubusercontent.com/35651583/165598981-ea9a27f8-a507-4b92-b4aa-1748a2cd80c4.png"),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            )
-                          : Container(
-                              margin: const EdgeInsets.only(
-                                top: defaultMargin,
-                                left: defaultMargin,
-                              ),
-                              width: 30,
-                              height: 30,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                color: Colors.black12,
-                              ),
-                              child: Center(
-                                  child: Icon(
-                                Icons.arrow_back_ios_new_rounded,
-                                color: mainColor,
-                              )),
+                        onTap: () {},
+                        child: Container(
+                          margin: const EdgeInsets.only(left: defaultMargin),
+                          width: 32,
+                          height: 32,
+                          decoration: const BoxDecoration(
+                            // image
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://user-images.githubusercontent.com/35651583/165598981-ea9a27f8-a507-4b92-b4aa-1748a2cd80c4.png"),
+                              fit: BoxFit.cover,
                             ),
-                    ),
+                          ),
+                        )),
                   ),
 
                   // title
